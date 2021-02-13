@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.10)
 
 project(simple_asio)
 
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 set(_simple_asio_debug_flags "-DDEBUG -g")
 set(_simple_asio_release_flags "-O2")
 

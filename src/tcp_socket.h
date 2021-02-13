@@ -17,13 +17,14 @@ namespace simple_asio
             }
             ~tcp_socket()
             {
-                debug_msg("tcp_socket object destroyed");
                 // will call the base socket destructor
+                debug_msg("tcp_socket object destroyed");
             }
             
 	    void create_socket(void)
             {
-		    socket_base<T>::create_socket(AF_INET, SOCK_STREAM, 0);
+                debug_msg("creating tcp socket");
+                socket_base<T>::create_socket(AF_INET, SOCK_STREAM, 0);
             }
     };
 }
