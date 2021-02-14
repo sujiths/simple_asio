@@ -1,5 +1,6 @@
 #include <iostream>
 #include <tcp_socket.h>
+#include <udp_socket.h>
 
 using namespace simple_asio;
 using namespace std;
@@ -7,11 +8,14 @@ using namespace std;
 int main()
 {
 
-    tcp_socket<> b;
+    tcp_socket<> sock_tcp;
+    udp_socket<> sock_udp;
     try
     {
-        b.create_socket();
-	cout<<"socket fd is "<<b.get_native_handle()<<endl;
+        sock_tcp.create_socket();
+        sock_udp.create_socket();
+	cout<<"tcp socket fd is "<<sock_tcp.get_native_handle()<<endl;
+	cout<<"udp socket fd is "<<sock_udp.get_native_handle()<<endl;
     }
     catch (int e)
     {
