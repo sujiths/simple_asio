@@ -6,8 +6,8 @@ project(simple_asio)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(_simple_asio_debug_flags "-DDEBUG -g")
-set(_simple_asio_release_flags "-O2")
+set(_simple_asio_debug_flags -DDEBUG)
+set(_simple_asio_release_flags -Wall)
 
 add_executable(simple_asio ../tests/main.cpp)
 target_include_directories(simple_asio PUBLIC ../src)

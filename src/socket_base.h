@@ -32,11 +32,11 @@ namespace simple_asio
                     throw 0;
             }
 
-            virtual T get_native_handle()
+            virtual T get_native_handle() const
             {
                 return socket_handle;
             }
-            virtual bool is_valid_handle(T handle)
+            virtual bool is_valid_handle(T handle) const
             {
                 return ((handle < 0)?false: true);
             }

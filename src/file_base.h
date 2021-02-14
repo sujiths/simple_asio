@@ -12,8 +12,8 @@ namespace simple_asio
         file_base() {}
         ~file_base() {}
 
-        virtual T get_native_handle() = 0;
-        virtual bool is_valid_handle(T handle) = 0;
+        virtual T get_native_handle() const = 0;
+        virtual bool is_valid_handle(T handle) const = 0;
     };
 }
 

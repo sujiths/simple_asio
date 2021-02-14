@@ -7,7 +7,6 @@ using namespace std;
 
 int main()
 {
-
     tcp_socket<> sock_tcp;
     udp_socket<> sock_udp;
     try
