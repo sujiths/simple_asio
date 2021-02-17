@@ -1,6 +1,6 @@
 #include <iostream>
-#include <tcp_socket.h>
-#include <udp_socket.h>
+#include <tcp_socket.hpp>
+#include <udp_socket.hpp>
 
 using namespace simple_asio;
 using namespace std;

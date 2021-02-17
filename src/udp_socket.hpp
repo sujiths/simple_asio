@@ -1,8 +1,8 @@
 #ifndef UDP_SOCKET_H
 #define UDP_SOCKET_H
 
-#include <socket_base.h>
-#include <log.h>
+#include <socket_base.hpp>
+#include <log.hpp>
 using namespace std;
 
 namespace simple_asio

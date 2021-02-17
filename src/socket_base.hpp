@@ -1,10 +1,10 @@
 #ifndef SOCKET_BASE_H_
 #define SOCKET_BASE_H_
 
-#include <io_base.h>
+#include <io_base.hpp>
 #include <sys/socket.h>
 #include <unistd.h>
-#include <log.h>
+#include <log.hpp>
 
 using namespace std;
 
