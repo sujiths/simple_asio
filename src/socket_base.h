@@ -1,7 +1,7 @@
 #ifndef SOCKET_BASE_H_
 #define SOCKET_BASE_H_
 
-#include <file_base.h>
+#include <io_base.h>
 #include <sys/socket.h>
 #include <unistd.h>
 #include <log.h>
@@ -11,7 +11,7 @@ using namespace std;
 namespace simple_asio 
 {
     template <typename T = int>
-    class socket_base : public file_base<T>
+    class socket_base : public io_base<T>
     {
         private:
             T socket_handle;
