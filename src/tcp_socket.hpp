@@ -15,6 +15,15 @@ namespace simple_asio
             {
                 debug_msg("tcp_socket object created");
             }
+
+	    tcp_socket(tcp_socket&& rhs):socket_base<T>(std::move<T>(rhs))
+	    {
+
+	    }
+	    tcp_socket& operator=(tcp_socket&& rhs)
+	    {
+		return static_cast<tcp_socket<T>&>(socket_base<T>::operator=(std::move(rhs)));
+	    }
             ~tcp_socket()
             {
                 // will call the base socket destructor
