@@ -24,7 +24,7 @@ namespace simple_asio
 	    {
 		return static_cast<tcp_socket<T>&>(socket_base<T>::operator=(std::move(rhs)));
 	    }
-            ~tcp_socket()
+            virtual ~tcp_socket()
             {
                 // will call the base socket destructor
                 debug_msg("tcp_socket object destroyed");

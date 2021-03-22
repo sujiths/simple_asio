@@ -22,7 +22,7 @@ namespace simple_asio
 		*this = std::move(rhs);
 	    }
             socket_base() { debug_msg("socket_base object created"); };
-            ~socket_base() 
+            virtual ~socket_base() 
             {
 
                 if(is_valid_handle(socket_handle))

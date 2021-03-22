@@ -15,7 +15,7 @@ namespace simple_asio
             {
                 debug_msg("udp_socket object created");
             }
-            ~udp_socket()
+            virtual ~udp_socket()
             {
                 // will call the base socket destructor
                 debug_msg("udp_socket object destroyed");

@@ -10,7 +10,7 @@ namespace simple_asio
     {
         public:
         io_base() {}
-        ~io_base() {}
+        virtual ~io_base() {}
 
         virtual T get_native_handle() const = 0;
         virtual bool is_valid_handle(T handle) const = 0;
